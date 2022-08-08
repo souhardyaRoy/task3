@@ -35,3 +35,11 @@ if(window.scrollY>300){
 }
 }
 addEventonElem(window,"scroll",activeNavbar);
+
+const addToFavBtns = document.querySelectorAll("[data-add-to-fav]");
+const toggleActive = ()=>{
+    this.classList.toggle("active");
+}
+addEventonElem(addToFavBtns,"click",toggleActive);
+
+
